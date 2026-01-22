@@ -167,22 +167,22 @@
 
                 const vCardData =
                     `BEGIN:VCARD\r
-                            VERSION:3.0\r
-                            N:Lalwani;Raj;;;\r
-                            FN:Raj Lalwani\r
-                            ORG:Adler Talent Solutions\r
-                            TITLE:Founder & Managing Director\r
-                            ROLE:Founder\r
-                            TEL;TYPE=CELL:+919909511255\r
-                            EMAIL;TYPE=WORK:rajlalwani@adlertalent.com\r
-                            URL;TYPE=WORK:https://adlertalent.com/\r
-                            URL;TYPE=MAP:https://maps.app.goo.gl/oJ4eQJSf9cA6L4198\r
-                            ADR;TYPE=WORK:;;Block A, 1303-1304, 13th Floor, Prahladnagar Trade Centre (PNTC), B/H Titanium City Centre, Times of India Road, Prahladnagar;Ahmedabad;;380015;India\r
-                            ADR;TYPE=WORK:;;Meydan Grandstand, 6th Floor, Meydan Road, Nad Al Sheba;Dubai;;;United Arab Emirates\r
-                            NOTE:Founder & Managing Director at Adler Talent Solutions. Corporate Office: Ahmedabad, India. Global HQ: Dubai, UAE.\r
-                            CATEGORIES:Founder,Managing Director,HR,Adler Talent Solutions\r
-                            PHOTO;ENCODING=BASE64;TYPE=JPEG:${base64Image}\r
-                            END:VCARD`;
+VERSION:3.0\r
+N:Lalwani;Raj;;;\r
+FN:Raj Lalwani\r
+ORG:Adler Talent Solutions\r
+TITLE:Founder & Managing Director\r
+ROLE:Founder\r
+TEL;TYPE=CELL:+919909511255\r
+EMAIL;TYPE=WORK:rajlalwani@adlertalent.com\r
+URL;TYPE=WORK:https://adlertalent.com/\r
+URL;TYPE=MAP:https://maps.app.goo.gl/oJ4eQJSf9cA6L4198\r
+ADR;TYPE=WORK:;;Block A, 1303-1304, 13th Floor, Prahladnagar Trade Centre (PNTC), B/H Titanium City Centre, Times of India Road, Prahladnagar;Ahmedabad;;380015;India\r
+ADR;TYPE=WORK:;;Meydan Grandstand, 6th Floor, Meydan Road, Nad Al Sheba;Dubai;;;United Arab Emirates\r
+NOTE:Founder & Managing Director at Adler Talent Solutions. Corporate Office: Ahmedabad, India. Global HQ: Dubai, UAE.\r
+CATEGORIES:Founder,Managing Director,HR,Adler Talent Solutions\r
+PHOTO;ENCODING=BASE64;TYPE=JPEG:${base64Image}\r
+END:VCARD`;
 
                 const blob = new Blob([vCardData], {
                     type: "text/vcard;charset=utf-8"
@@ -191,7 +191,7 @@
                 const url = URL.createObjectURL(blob);
                 const a = document.createElement("a");
                 a.href = url;
-                a.download = "Raj_Lalwani_Adler_Talent.vcf";
+                a.download = "Raj_Lalwani.vcf";
                 document.body.appendChild(a);
                 a.click();
 
@@ -205,7 +205,6 @@
         }
     }
 </script>
-
 
 </body>
 </html>
