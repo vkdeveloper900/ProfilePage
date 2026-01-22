@@ -22,11 +22,11 @@ html, body {
     border-radius: 30px;
     padding: 10px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-    width: 90%;
-    height: 90%;
-    background: #12c2e9; /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #000000, #c471ed, #12c2e9); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #000000, #c471ed, #f4bc74); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    /*width: 90%;*/
+    /*height: 90%;*/
+    /*background: #12c2e9; !* fallback for old browsers *!*/
+    /*background: -webkit-linear-gradient(to right, #000000, #c471ed, #12c2e9); !* Chrome 10-25, Safari 5.1-6 *!*/
+    /*background: linear-gradient(to right, #000000, #c471ed, #f4bc74); !* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ *!*/
 }
 
 .left-container {
@@ -272,6 +272,7 @@ td:first-child {
 
 .adler-info {
     font-size: 12px;
+    text-align: justify;
 }
 
 /* Shake animation */
