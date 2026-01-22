@@ -1,0 +1,132 @@
+body {
+    font-family: 'Sora', sans-serif;
+    background: #ffffff;
+}
+
+/* COMMON CARD */
+.profile-card {
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 20px;
+    padding: 24px;
+
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08),
+    0 1px 1px rgba(0, 0, 0, 0.06);
+
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s ease;
+}
+
+/*.profile-card:hover {*/
+/*    transform: translateY(-6px);*/
+/*    box-shadow:*/
+/*            0 12px 28px rgba(0,0,0,0.12),*/
+/*            0 30px 45px rgba(0,0,0,0.10);*/
+/*}*/
+
+/* PROFILE IMAGE */
+.profile-img {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* COMPANY LOGO */
+.company-logo {
+    width: 160px;
+}
+
+/* ICON BUTTONS */
+.icon-btn {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    border: 1px solid #d1d5db;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #111827;
+    transition: 0.3s;
+}
+
+.icon-btn:hover {
+    background: #c552a0;
+    color: #fff;
+}
+
+/* DETAILS */
+.details li {
+    padding: 6px 0;
+    color: #111827;
+}
+
+/* BUTTONS */
+.website-btn,
+.save-btn {
+    background: linear-gradient(to right, #bf4daa, #c540ac, #ad33d1);
+    color: #fff;
+    border-radius: 20px;
+    font-size: 13px;
+    padding: 8px 18px;
+    border: none;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+
+.website-btn:hover,
+.save-btn:hover {
+    color: #fff;
+    transform: translate(-2px, 2px) rotate(1deg) scale(1.01);
+}
+
+.website-btn::before,
+.save-btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -75%;
+    width: 50%;
+    height: 100%;
+
+    background: linear-gradient(
+            120deg,
+            transparent,
+            rgba(255, 255, 255, 0.6),
+            transparent
+    );
+
+    transform: skewX(-20deg);
+}
+
+.website-btn:hover::before,
+.save-btn:hover::before {
+    animation: shine-wave 0.75s ease;
+}
+
+@keyframes shine-wave {
+    0% {
+        left: -75%;
+    }
+    100% {
+        left: 125%;
+    }
+}
+
+
+.highlight {
+    color: #c552a0;
+    font-weight: 600;
+}
+
+h4 {
+    color: #c552a0;
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+}
