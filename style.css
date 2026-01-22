@@ -1,7 +1,19 @@
 body {
     font-family: 'Sora', sans-serif;
     background: #ffffff;
+
+    min-height: 100vh;
+    margin: 0;
+
+    display: flex;
+    justify-content: center; /* horizontal center */
+    align-items: center; /* vertical center */
 }
+
+.container {
+    max-width: 1200px;
+}
+
 
 /* COMMON CARD */
 .profile-card {
@@ -134,6 +146,18 @@ a {
     text-decoration: none;
 }
 
-.adler-info{
+.adler-info {
     font-size: 11px;
 }
+
+@media (max-width: 768px) {
+    body {
+        align-items: flex-start;
+    }
+
+    .container {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}
+
